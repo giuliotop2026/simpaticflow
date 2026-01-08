@@ -2,24 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&display=swap');
-
 :root {
   --napoli-blue: #003c82;
   --napoli-light-blue: #12a0d7;
   --napoli-gold: #ffd700;
 }
 
-* { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-
-@keyframes float { 0%,100%{transform:translateY(0)}50%{transform:translateY(-20px)} }
-@keyframes spin-slow { from{transform:rotate(0deg)}to{transform:rotate(360deg)} }
-@keyframes shimmer { 0%{transform:translateX(-100%)}100%{transform:translateX(100%)} }
-@keyframes fly { 0%,100%{transform:translateY(0) rotate(45deg)}50%{transform:translateY(-5px) rotate(45deg)} }
-@keyframes wiggle { 0%,100%{transform:rotate(0)}25%{transform:rotate(5deg)}75%{transform:rotate(-5deg)} }
-
-.animate-float { animation: float 6s ease-in-out infinite; }
-.animate-spin-slow { animation: spin-slow 20s linear infinite; }
-.animate-shimmer { animation: shimmer 3s infinite; }
-.animate-fly { animation: fly 1s ease-in-out infinite; }
-
+body {
+  background-color: var(--napoli-blue);
+  color: white;
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
